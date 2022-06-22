@@ -15,7 +15,7 @@ jobs:
         uses: docker/login-action@v1
         with:
           username: svoeobraznii
-          password: shev110103
+          password: cd033fc4-8140-499a-9957-5bae8f838204
       -
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
