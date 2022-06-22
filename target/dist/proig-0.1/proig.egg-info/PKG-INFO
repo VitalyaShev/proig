@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: proig
+Version: 0.1
+Home-page: 
+Author: Vitalii Shevtsov, Konstantin Troitskii, Ivan Eshenko
+Author-email: v.shevtsov@g.nsu.ru, k.troitskii@g.nsu.ru, i.eshchenko@g.nsu.ru
+Maintainer: 
+Maintainer-email: 
+License: None
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+
+Offline player for playing your music

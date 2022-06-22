@@ -1,0 +1,8 @@
+main.py
+setup.py
+proig.egg-info/PKG-INFO
+proig.egg-info/SOURCES.txt
+proig.egg-info/dependency_links.txt
+proig.egg-info/namespace_packages.txt
+proig.egg-info/top_level.txt
+proig.egg-info/zip-safe

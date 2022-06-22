@@ -1,0 +1,177 @@
+
+<MainWidget>:
+    container: Mi
+    FloatLayout:
+        Label:
+            id:LeftPanel
+            size_hint: .2, 1
+            pos_hint: {'x': 0, 'y': 0}
+            canvas.before:
+                Color:
+                    rgb: (.27, .26, .26)
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+        FloatLayout:
+            Label:
+                id:RightPanelDown
+                pos_hint: {'x': 0.2, 'y': 0}
+                size_hint: .8, .6
+                canvas.before:
+                    Color:
+                        rgb: (.13, .10, .17)
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+
+            ScrollView:
+                id: scroll
+                bar_width: 8
+                size_hint:(.8, .6)
+                pos_hint:{'x': .2, 'y': 0}
+                scroll_type: ['bars', 'content']
+                effect_cls: "ScrollEffect"
+                StackLayout:
+                    id: Mi
+                    line_width:0.5
+                    size_hint_y:None
+                    padding:0
+
+        Label:
+            id:RightPanelUp
+            size_hint: .8, .4
+            pos_hint: {'x': 0.2, 'y': 0.6}
+            canvas.before:
+                Color:
+                    rgb: (.13, .10, .17)
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+
+
+
+    Button:
+        id:play
+        text:"Play"
+        pos_hint: {'x': 0.23, 'y': 0.63}
+        size_hint:.1, .05
+        background_color: (.13, .10, .17, .0)
+        canvas.before:
+            Color:
+                rgb: (.31, .2, .2)
+            RoundedRectangle:
+                size: (self.size)
+                pos: (self.pos)
+        on_press: root.butplay(self, 0)
+
+
+    Button:
+        id: my_music
+        text: "My Music"
+        font_size: self.width/13
+        size_hint: .15, .05
+        pos_hint: {'x': 0.03, 'y': 0.94}
+        background_color: (.27, .26, .26, .0)
+        on_press:root.manager.current = 'mymusic'
+
+    Button:
+        id: playlists
+        text: "Playlists"
+        font_size: self.width/13
+        size_hint: .15, .05
+        pos_hint: {'x': 0.03, 'y': 0.88}
+        background_color: (.27, .26, .26, .0)
+        on_press:root.manager.current = 'playls'
+
+
+    Button:
+        id: playlist
+        text: "+Playlist"
+        font_size: self.width/5
+        size_hint: .15, .05
+        pos_hint: {'x': 0.03, 'y': 0.05}
+        background_color: (.27, .26, .26, .0)
+        on_press:root.addps()
+
+    Label:
+        size_hint: .2, 0
+        pos_hint: {'x': 0, 'y': 0.15}
+        canvas.before:
+            Color:
+                rgb: (.23, .16, .31)
+            Line:
+                width: .3
+                rectangle: (self.x, self.y, self.width, self.height)
+
+    Label:
+        size_hint: .8, 0
+        pos_hint: {'x': 0.2, 'y': 0.6}
+        canvas.before:
+            Color:
+                rgb: (.27, .26, .26)
+            Line:
+                width: .3
+                rectangle: (self.x, self.y, self.width, self.height)
+
+
+<Playls>:
+    container: Pl
+    FloatLayout:
+        Label:
+            id:LeftPanel
+            size_hint: .2, 1
+            pos_hint: {'x': 0, 'y': 0}
+            canvas.before:
+                Color:
+                    rgb: (.27, .26, .26)
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+        Label:
+            id:RightPanelDown
+            pos_hint: {'x': 0.2, 'y': 0}
+            size_hint: .8, 1
+            canvas.before:
+                Color:
+                    rgb: (.13, .10, .17)
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+        ScrollView:
+            id: scroll
+            bar_width: 8
+            size_hint:(.8, 1)
+            pos_hint:{'x': .2, 'y': 0}
+            scroll_type: ['bars', 'content']
+            effect_cls: "ScrollEffect"
+            StackLayout:
+                id: Pl
+                orientation:'lr-tb'
+                line_width:0.5
+                size_hint_y:.5
+                padding:0
+                spacing:0
+                Button:
+                    text:'test'
+                    size_hint:(.2, 1)
+
+        Button:
+            id: my_music
+            text: "My Music"
+            font_size: self.width/13
+            size_hint: .15, .05
+            pos_hint: {'x': 0.03, 'y': 0.94}
+            background_color: (.27, .26, .26, .0)
+            on_press:root.manager.current = 'mymusic'
+
+        Button:
+            id: playlists
+            text: "Playlists"
+            font_size: self.width/13
+            size_hint: .15, .05
+            pos_hint: {'x': 0.03, 'y': 0.88}
+            background_color: (.27, .26, .26, .0)
+            on_press:root.manager.current = 'playls'

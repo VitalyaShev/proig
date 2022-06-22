@@ -1,0 +1,32 @@
+running clean
+'build\lib' does not exist -- can't clean it
+'build\bdist.win-amd64' does not exist -- can't clean it
+'build\scripts-3.9' does not exist -- can't clean it
+running sdist
+running egg_info
+creating proig.egg-info
+writing proig.egg-info\PKG-INFO
+writing dependency_links to proig.egg-info\dependency_links.txt
+writing namespace_packages to proig.egg-info\namespace_packages.txt
+writing top-level names to proig.egg-info\top_level.txt
+writing manifest file 'proig.egg-info\SOURCES.txt'
+reading manifest file 'proig.egg-info\SOURCES.txt'
+writing manifest file 'proig.egg-info\SOURCES.txt'
+warning: sdist: standard file not found: should have one of README, README.rst, README.txt, README.md
+
+running check
+creating proig-0.1
+creating proig-0.1\proig.egg-info
+copying files to proig-0.1...
+copying main.py -> proig-0.1
+copying setup.py -> proig-0.1
+copying proig.egg-info\PKG-INFO -> proig-0.1\proig.egg-info
+copying proig.egg-info\SOURCES.txt -> proig-0.1\proig.egg-info
+copying proig.egg-info\dependency_links.txt -> proig-0.1\proig.egg-info
+copying proig.egg-info\namespace_packages.txt -> proig-0.1\proig.egg-info
+copying proig.egg-info\top_level.txt -> proig-0.1\proig.egg-info
+copying proig.egg-info\zip-safe -> proig-0.1\proig.egg-info
+Writing proig-0.1\setup.cfg
+creating dist
+Creating tar archive
+removing 'proig-0.1' (and everything under it)
