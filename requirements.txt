@@ -1,4 +1,2 @@
 kivy
 pygame
-os
-time
