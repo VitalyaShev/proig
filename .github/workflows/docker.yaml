@@ -23,6 +23,8 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v2
         with:
+          username: svoeobraznii
+          password: f27b1d3e-bbe4-4eaf-a400-ee0d163675fa
           context: .
           file: Dockerfile
           push: true
