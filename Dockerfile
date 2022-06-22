@@ -12,3 +12,4 @@ RUN ls ../app
 #RUN pyb --start-project
 WORKDIR /app
 RUN    pyb -v
+CMD [ "python", "./src/main/python/main.py" ]
